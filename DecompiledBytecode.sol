@@ -10,7 +10,9 @@ contract Contract {
         if (msg.data.length < 0x04) { revert(memory[0x00:0x00]); } // this line exist because all functions takes argument
     
         var0 = msg.data[0x00:0x20] >> 0xe0; // read first 4 bytes to take function selector
-    
+        
+        // After that line all publicly callable function selectors specifies. 
+   
         if (var0 == 0x1076d7ae) { // firstMap(address,uint256)
             // Dispatch table entry for 0x1076d7ae (unknown)
             var var1 = 0x0081;
