@@ -1,13 +1,13 @@
 contract Contract {
     function main() {
         memory[0x40:0x60] = 0x80;
-        var var0 = msg.value;
+        var var0 = msg.value; // ether sent via tx
     
         if (var0) { revert(memory[0x00:0x00]); } // if there isnt any payable or fallback function in contract. 
                                                 // this line appears on top. So check it, if exist then there 
                                                 // wont be reentrancy with native
     
-        if (msg.data.length < 0x04) { revert(memory[0x00:0x00]); }
+        if (msg.data.length < 0x04) { revert(memory[0x00:0x00]); } // this line exist because all functions takes argument
     
         var0 = msg.data[0x00:0x20] >> 0xe0;
     
