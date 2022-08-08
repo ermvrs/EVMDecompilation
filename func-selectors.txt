@@ -1,0 +1,8 @@
+{
+	"1076d7ae": "firstMap(address,uint256)",
+	"197a4a18": "readFirst(address)",
+	"366ae10c": "readSec(address)",
+	"825bd006": "readThird(address,uint256)",
+	"3adf8e83": "secondMap(address,uint256)",
+	"4575c4e4": "thirdMap(address,uint256,uint256)"
+}
