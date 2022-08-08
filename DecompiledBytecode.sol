@@ -11,7 +11,7 @@ contract Contract {
     
         var0 = msg.data[0x00:0x20] >> 0xe0; // read first 4 bytes to take function selector
     
-        if (var0 == 0x1076d7ae) {
+        if (var0 == 0x1076d7ae) { // firstMap(address,uint256)
             // Dispatch table entry for 0x1076d7ae (unknown)
             var var1 = 0x0081;
             var var2 = 0x007c;
@@ -20,7 +20,7 @@ contract Contract {
             var2, var3 = func_0379(var3, var4);
             func_007C(var2, var3);
             stop();
-        } else if (var0 == 0x197a4a18) {
+        } else if (var0 == 0x197a4a18) { // readFirst(address)
             // Dispatch table entry for 0x197a4a18 (unknown)
             var1 = 0x009d;
             var2 = 0x0098;
@@ -35,7 +35,7 @@ contract Contract {
             var1 = func_041B(var2, var3);
             var temp1 = memory[0x40:0x60];
             return memory[temp1:temp1 + var1 - temp1];
-        } else if (var0 == 0x366ae10c) {
+        } else if (var0 == 0x366ae10c) { // readSec(address)
             // Dispatch table entry for 0x366ae10c (unknown)
             var1 = 0x00cd;
             var2 = 0x00c8;
@@ -50,7 +50,7 @@ contract Contract {
             var1 = func_041B(var2, var3);
             var temp3 = memory[0x40:0x60];
             return memory[temp3:temp3 + var1 - temp3];
-        } else if (var0 == 0x3adf8e83) {
+        } else if (var0 == 0x3adf8e83) { // secondMap(address,uint256)
             // Dispatch table entry for 0x3adf8e83 (unknown)
             var1 = 0x00fd;
             var2 = 0x00f8;
@@ -59,7 +59,7 @@ contract Contract {
             var2, var3 = func_0379(var3, var4);
             func_00F8(var2, var3);
             stop();
-        } else if (var0 == 0x4575c4e4) {
+        } else if (var0 == 0x4575c4e4) { // thirdMap(address,uint256,uint256)
             // Dispatch table entry for 0x4575c4e4 (unknown)
             var1 = 0x0119;
             var2 = 0x0114;
@@ -68,7 +68,7 @@ contract Contract {
             var2, var3, var4 = func_03B9(var3, var4);
             func_0114(var2, var3, var4);
             stop();
-        } else if (var0 == 0x825bd006) {
+        } else if (var0 == 0x825bd006) { // readThird(address,uint256)
             // Dispatch table entry for 0x825bd006 (unknown)
             var1 = 0x0135;
             var2 = 0x0130;
